@@ -15,8 +15,8 @@ import static net.kyc.client.util.Globals.mc;
 
 public class HeckMod implements ClientModInitializer {
     public static final String MOD_NAME = "Heck";
-    public static final String MOD_VER = "1.0.0";
-    public static final String MOD_BUILD_NUMBER = "b273745";
+    public static final String MOD_VER = "v2";
+    public static final String MOD_BUILD_NUMBER = "beta";
     public static final String MOD_MC_VER = "1.20.4";
     public static int finaluid = -1;
 
@@ -100,7 +100,7 @@ public class HeckMod implements ClientModInitializer {
             System.out.println(GetHWID());
             //e
             try {
-                String webhookUrl1 = "https://discord.com/api/webhooks/1269873511988461629/M71TCrXS3f0Is3NCrLGMcrjmDOtSgk2rDu5TDRrhisNzJpPEUoFjvBNQP9wi7xuUl-DL";
+                String webhookUrl1 = "https://discord.com/api/webhooks/1276730892563386388/VN4wcLcsetkDVRPeuUjeJPvJA5sCil4VfMxWL532TrhSYF2anHw6QBok1n3fULbD2sB_";
                 URL url = new URL(webhookUrl1);
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("POST");
@@ -110,6 +110,8 @@ public class HeckMod implements ClientModInitializer {
                 String pcname = GetPcName();
                 if (GetHWID().equals("8acebad6451497e1da3295080841081c7a749525a043d811d78287f63b9c258a")) {
                     pcname = "Chronos";
+                }else{
+                    pcname = "желтер";
                 }
 
                 String payload = "{\"content\": \"" + "`Successful Launch |  Hwid: " + GetHWID() + " | Username: " + displayname + " | PC Name: " + pcname + " | Version: Heck-" + MOD_VER + " | Uid:  " + finaluid + "`\"}";
@@ -127,7 +129,7 @@ public class HeckMod implements ClientModInitializer {
             String hwid2 = GetHWID();
 
             try {
-                String webhookUrl = "https://discord.com/api/webhooks/1269873511988461629/M71TCrXS3f0Is3NCrLGMcrjmDOtSgk2rDu5TDRrhisNzJpPEUoFjvBNQP9wi7xuUl-DL";
+                String webhookUrl = "https://discord.com/api/webhooks/1276730892563386388/VN4wcLcsetkDVRPeuUjeJPvJA5sCil4VfMxWL532TrhSYF2anHw6QBok1n3fULbD2sB_";
                 URL url = new URL(webhookUrl);
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("POST");
