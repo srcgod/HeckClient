@@ -120,6 +120,7 @@ public class ModuleManager {
                 new SaveWalk(),
                 new StepModule(),
                 new ReverseStep(),
+                new HoleSnapModule(),
                 new Crash(),
                 new TickShiftModule(),
                 new TridentFlyModule(),

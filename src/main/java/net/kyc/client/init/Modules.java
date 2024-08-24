@@ -105,6 +105,7 @@ public class Modules {
     public static ParkourModule PARKOUR;
     public static SpeedModule SPEED;
     public static SprintModule SPRINT;
+    public static HoleSnapModule HoleSnap;
     public static StepModule STEP;
     public static TickShiftModule TICK_SHIFT;
     public static TridentFlyModule TRIDENT_FLY;
